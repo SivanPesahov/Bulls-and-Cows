@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bulls_and_cows_name_page_style.css">
+    <link rel="import" href="bulls_and_cows_name_page.html">
+</head>
+<body>
+
+    <header class = 'header'>
+        <button class = 'button' onclick="startGame()">Start game!</button>
+        <h1>Bulls and Cows!</h1>
+        <div id ='time_counter'></div>
+    </header>
+    
+    <div class = 'hello'><p id = 'hello_playerName'></p></div>
+
+    <div class="game_area">
+        
+        <div id = 'win_massage' class = 'answer'></div>
+
+        <div id="computer_arr" class="answer">comparr</div>
+        <div id="user_arr"></div>
+        <div class = 'bulls_and_cows_area'>
+            <div>
+                <div class = 'bulls_and_cows_headline'>Bulls</div>
+                <div id = 'bulls' class = 'bulls_and_cows_headline'></div>
+            </div>
+            <div>
+                <div class = 'bulls_and_cows_headline' >Cows</div>
+                <div id = 'cows' class = 'bulls_and_cows_headline'></div>
+            </div>
+        </div>
+        
+        
+        <div class = 'buttons_area'>
+            <button class = 'button' onclick="insertNumberIntoGuess(1)">1</button>
+            <button class = 'button' onclick="insertNumberIntoGuess(2)">2</button>
+            <button class = 'button' onclick="insertNumberIntoGuess(3)">3</button>
+            <button class = 'button' onclick="insertNumberIntoGuess(4)">4</button>
+            <button class = 'button' onclick="insertNumberIntoGuess(5)">5</button>
+            <button class = 'button' onclick="insertNumberIntoGuess(6)">6</button>
+            <button class = 'button' onclick="insertNumberIntoGuess(7)">7</button>
+            <button class = 'button' onclick="insertNumberIntoGuess(8)">8</button>
+            <button class = 'button' onclick="insertNumberIntoGuess(9)">9</button>
+            <button class = 'button' onclick="insertNumberIntoGuess(0)">0</button>
+        </div>
+        
+    </div>
+   
+    <div class = 'reset_give_up_quit'>
+        <button class = 'button' onclick="ResatAndGoToTheStart()">Quit</button>
+        <button class = 'button' onclick="giveUpAndShowComparr()">Give up</button>
+        <button class = 'button' onclick="resetValues()">Resart</button>
+    </div>    
+    
+    <div class = 'history_table'>
+        <table></table>
+    </div>
+
+
+
+
+
+
+    <script src = 'bulls_and_cows_script.js'></script>
+</body>
+</html>
